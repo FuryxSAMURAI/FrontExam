@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Boutique</title>
+</head>
+<body>
+    <div class="preloader__wrapper">
+        <div class="preloader">
+            <div class="preloader-site-name">Boutique</div>
+            <div class="blobs">
+            <div class="blob-center"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+        </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+        </defs>
+    </svg>
+        </div>
+    </div>
+    <header>
+        <div class="header__container">
+            <div class="header__container-menu-mobile">
+                <div class="header__container-menu-mobile-btn-open" onclick="openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__container-menu-mobile-container">
+                    <div class="header__container-menu-mobile-btn-close" onclick="closeMenu()">
+                        <img src="./assets/images/callBackImages/callBackClose/close.png" alt="">
+                    </div>
+                    <div class="header__container-menu-mobile-items">
+                        <ul class="header__container-menu-mobile-lists">
+                            <li class="header__container-menu-mobile-list">Головна</li>
+                            <li class="header__container-menu-mobile-list">Новинки</li>
+                            <li class="header__container-menu-mobile-list">SALE</li>
+                            <li class="header__container-menu-mobile-list">Білизна</li>
+                            <li class="header__container-menu-mobile-list">Взуття</li>
+                            <li class="header__container-menu-mobile-list">Аксесуари</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__container-title">Boutique</div>
+            <nav class="header__container-menu-items">
+                <div class="header__container-menu-item"><a href="#">Новинки</a></div>
+                <div class="header__container-menu-item"><a href="#" class="header__container-menu-item-red">SALE</a></div>
+                <div class="header__container-menu-item">
+                    <a href="#">Одяг</a> 
+                    <div class="header__container-menu-item-links">
+                        <div class="header__container-menu-item-links-content">
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Жінкам</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Верхній одяг</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Трикотажні кофти</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Джинси</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Штани</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Сукні</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Весь одяг</a></li>
+                            </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Чоловікам</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Верхній одяг</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Трикотажні кофти</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Джинси</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Штани</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Спортивний одяг</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Рубашки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Весь одяг</a></li>
+                            </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Дітям</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Верхній одяг</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Трикотажні кофти</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Джинси</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Штани</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Комплектний одяг</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Платья та сарафани</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Весь одяг</a></li>
+                            </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Бренди</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Nike</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">New balance</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Puma</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Mexx</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Calvin Klein</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Tommy Hilfiger</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Всі бренди</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__container-menu-item">
+                   <a href="#">Білизна</a> 
+                <div class="header__container-menu-item-links">
+                    <div class="header__container-menu-item-links-content">
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Жінкам</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Нижня білизна</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Одяг для дому та сну</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Вся білизна</a></li>
+                        </ul>
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Чоловікам</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Нижня білизна</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Одяг для дому та сну</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Вся білизна</a></li>
+                        </ul>
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Дітям</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Нижня білизна</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Одяг для дому та сну</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Вся білизна</a></li>
+                        </ul>
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Бренди</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Diesel</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Helen Marlen</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">PRPY</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Tommy Hilfiger</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Всі бренди</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__container-menu-item">
+                <a href="#">Взуття</a> 
+                <div class="header__container-menu-item-links">
+                    <div class="header__container-menu-item-links-content">
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Жінкам</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Кросівки</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Ботинки</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Туфлі</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Домашні тапці</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Всі взуття</a></li>
+                        </ul>
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Чоловікам</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Кросівки</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Ботинки</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Туфлі</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Домашні тапці</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Всі взуття</a></li>
+                        </ul>
+                        <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Дітям</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Кросівки</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Ботинки</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Туфлі</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Домашні тапці</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Всі взуття</a></li>
+                        </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                            <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Бренди</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Diesel</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Helen Marlen</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">PRPY</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Tommy Hilfiger</a></li>
+                            <li class="header__container-menu-item-links-list"><a href="#">Всі бренди</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__container-menu-item">
+                <a href="#">Аксесуари</a> 
+                <div class="header__container-menu-item-links">
+                        <div class="header__container-menu-item-links-content">
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Жінкам</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Сумки та рюкзаки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Головні убори</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Ремені та підтяжки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Шкарпетки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Колготки та панчохи</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Інші аксесуари</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Шарфи та рукавички</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Всі аксесуари</a></li>
+                            </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Чоловікам</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Сумки та рюкзаки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Головні убори</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Ремені та підтяжки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Шкарпетки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Інші аксесуари</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Шарфи та рукавички</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Всі аксесуари</a></li>
+                            </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Дітям</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Сумки та рюкзаки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Головні убори</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Ремені та підтяжки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Шкарпетки</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Інші аксесуари</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Шарфи та рукавички</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Всі аксесуари</a></li>
+                            </ul>
+                            <ul class="header__container-menu-item-links-lists">
+                                <li class="header__container-menu-item-links-list"><a href="#" class="header__container-menu-item-links-lists-title">Бренди</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Guess</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Tommy Hilfiger</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Calvin Klein</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Bimba Y Lola</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Diesel</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Trussardi</a></li>
+                                <li class="header__container-menu-item-links-list"><a href="#">Всі бренди</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__container-user-content">
+                <div class="header__container-user-content-search">
+                    <img src="./assets/images/searchImg/free-icon-magnifier-9638122.png" alt="">
+                    <!-- <input type="text"> -->
+                </div>
+                <div class="header__container-user-content-bag">
+                    <img src="./assets/images/headerBag/free-icon-shopping-bag-3661173.png" alt="">
+                </div>
+                <div class="header__container-user-content-profile">
+                    <img src="./assets/images/userProfile/free-icon-user-9630178.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__container">
+            <div class="main__container-cards-underarmour-out">
+                <div class="main__container-cards-underarmour-content"></div>
+            </div>
+            <div class="main__container-ads"></div>
+            <div class="main__container-cards-trends-out"></div>
+            <div class="main__container-ads-second"></div>
+            <div class="main__container-cards-popular-out"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container-blocks">
+                <div class="footer__container-blocks-contacts">
+                    <ul class="footer__container-block-contacts">
+                        <li class="footer__container-block-contact">Контакт-центр</li>
+                        <li class="footer__container-block-contact"><a href="#">044 594 34 39</a></li>
+                        <li class="footer__container-block-contact">Пн-Пт 9:00 - 21:00</li>
+                        <li class="footer__container-block-contact">Сб-Нд 9:00 - 18:00</li>
+                        <li class="footer__container-block-contact-social">
+                            <div class="footer__container-block-contact-social-facebook"><img src="../assets/images/foorterImg/facebook/icons8-facebook-f.svg" alt="Oops, something went wrong :("></div>
+                            <div class="footer__container-block-contact-social-instagram"><img src="../assets/images/foorterImg/instagram/icons8-instagram.svg" alt="Oops, something went wrong :("></div>
+                        </li>
+                    </ul>
+                    <ul class="footer__container-block-contacts">
+                        <li class="footer__container-block-contact">Особистий кабінет</li>
+                        <li class="footer__container-block-contact"><a href="#">Історія звмовлень</a></li>
+                        <li class="footer__container-block-contact"><a href="#">Мої данні</a></li>
+                        <li class="footer__container-block-contact"><a href="#">Адреси доставки</a></li>
+                    </ul>
+                    <ul class="footer__container-block-contacts">
+                        <li class="footer__container-block-contact">Покупцям</li>
+                        <li class="footer__container-block-contact"><a href="#">Оплата та доставка</a></li>
+                        <li class="footer__container-block-contact"><a href="#">Повернення</a></li>
+                        <li class="footer__container-block-contact"><a href="#">Питання та відповіді</a></li>
+                        <li class="footer__container-block-contact"><a href="#">Гарантія</a></li>
+                    </ul>
+                    <ul class="footer__container-block-contacts">
+                        <li class="footer__container-block-contact">Про компанію</li>
+                        <li class="footer__container-block-contact"><a href="#">Про нас</a></li>
+                        <li class="footer__container-block-contact"><a href="#">Угода користувача</a></li>
+                        <li class="footer__container-block-contact-apps">
+                            <div class="footer__container-block-contact-app-appStore"><img src="../assets/images/foorterImg/appStore/Download_on_the_App_Store_Badge.svg.png" alt=""></div>
+                            <div class="footer__container-block-contact-app-playMarket"><img src="../assets/images/foorterImg/googlePlay/Google_Play_Store_badge_EN.svg.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
